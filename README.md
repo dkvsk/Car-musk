@@ -1,5 +1,7 @@
 # Car-musk
 
+https://dkvsk.github.io/Car-musk/
+
 1. Создаем репозиторий
 2. Копируем ссылку
 3. В Git Bash Here пишим команду (git clone) и вставляем ссылку скопированную в HTTPS
