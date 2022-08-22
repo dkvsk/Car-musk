@@ -11,12 +11,12 @@ const formatHtml = require("gulp-format-html");
 /* Build HTML */
 
 async function buildhtml() {
-  let includes = new ssi("app/", "build/", "/**/*.html");
+  let includes = new ssi("app/", "docs/", "/**/*.html");
   includes.compile();
 
-  del("build/parts", { force: true });
+  del("docs/parts", { force: true });
 
-  return src("build/*.html").pipe(formatHtml()).pipe(dest("build"));
+  return src("docs/*.html").pipe(formatHtml()).pipe(dest("docs"));
 }
 
 /* Style */
@@ -45,7 +45,7 @@ function watchFiles() {
   browserSync.init({
     server: {
       baseDir: "app/",
-      middleware: bssi({ baseDir: "app/", ext: ".html" }),
+      middleware: bssi({ baseDir: "app/", ext: ".html", version: "1.4.0"}),
     },
     // server: true,
     notify: false,
@@ -61,7 +61,7 @@ exports.watch = watchFiles;
 /* Clean */
 
 function clean() {
-  return del("build/**/*", { force: true });
+  return del("docs/**/*", { force: true });
 }
 
 exports.clean = clean;
@@ -78,7 +78,7 @@ function copy() {
       "app/fonts/**/*",
     ],
     { base: "app/" }
-  ).pipe(dest("build"));
+  ).pipe(dest("docs"));
 }
 
 exports.copy = copy;
