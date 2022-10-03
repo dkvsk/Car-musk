@@ -1,0 +1,38 @@
+/*Burger*/
+
+.burger {
+  display: none;
+  cursor: pointer;
+
+  @media only screen and (max-width: 991px) {
+    display: block;
+  }
+
+  &.active {
+    .burger__line {
+      &--top {
+        transform: rotate(45deg) translate(9px, -8px);
+      }
+      &--middle {
+        opacity: 0;
+      }
+      &--bottom {
+        transform: rotate(-45deg) translate(-20px, -6px);
+      }
+    }
+  }
+
+  &__line {
+    width: 40px;
+    height: 3px;
+    fill: #db3138;
+    transition: transform 300ms, opacity 300ms;
+  }
+
+  &__line {
+    width: 40px;
+    height: 3px;
+    fill: #db3138;
+    transition: transform 300ms, opacity 300ms;
+  }
+}

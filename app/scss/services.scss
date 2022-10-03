@@ -1,0 +1,148 @@
+/*Services*/
+
+.services {
+  padding-top: 90px;
+  margin-bottom: 92px;
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+
+  &__head {
+    text-align: center;
+    max-width: 636px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__dekors {
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__dekor {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    margin-bottom: 20px;
+
+    &--first {
+      margin-bottom: 27px;
+    }
+
+    &--third {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #db3138;
+      transition: width 0.3s;
+    }
+
+    span {
+      position: relative;
+    }
+  }
+
+  &__items {
+    display: none;
+
+    &--active {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 24px;
+
+      @media only screen and (max-width: 991px) {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &__item {
+    border: 1px solid #898989;
+    padding: 80px 39px 50px;
+    text-align: center;
+
+    @media only screen and (max-width: 1300px) {
+      padding: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    cursor: pointer;
+  }
+
+  &__tab {
+    padding: 20px 40px 10px;
+
+    &--active {
+      border: 1px solid #db3138;
+      background-color: #db3138;
+    }
+  }
+}

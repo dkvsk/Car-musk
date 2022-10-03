@@ -1,0 +1,148 @@
+/*Progress*/
+
+.progress {
+  padding: 140px 0 90px;
+
+  @media only screen and (max-width: 991px) {
+    padding: 40px 0;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 10px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+
+    @media only screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 42px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media only screen and (max-width: 575px) {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  &__dekors {
+    margin-bottom: 60px;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+
+  &__dekor {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__item {
+    border: 1px solid #898989;
+    padding: 25px 20px 35px;
+    text-align: center;
+
+    @media only screen and (max-width: 767px) {
+      padding: 10px;
+    }
+
+    &--second {
+      margin-top: 40px;
+    }
+
+    &--seven {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: "ReformaGroteskDemiC";
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #db3138;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+  span {
+    font-size: 52px;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 42px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "ReformaGroteskDemiC";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  &__reward {
+    border: 1px solid #898989;
+    padding: 30px 20px 35px;
+    text-align: center;
+
+    @media only screen and (max-width: 767px) {
+      padding: 20px 10px;
+    }
+  }
+
+  &__picture {
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+  }
+}

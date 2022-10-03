@@ -1,0 +1,235 @@
+/*Feedback*/
+
+.feedback {
+  margin-top: 60px;
+  padding-bottom: 100px;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__head {
+    text-align: center;
+  }
+
+  &__dekors {
+    margin: 60px 0;
+
+    @media only screen and (max-width: 767px) {
+      margin: 30px 0;
+    }
+  }
+
+  &__dekor {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__form {
+    max-width: 636px;
+    margin: 0 auto;
+  }
+
+  &__data {
+    display: flex;
+    margin-bottom: 24px;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input {
+    margin-right: 24px;
+    background: #141414;
+    border: 1px solid #898989;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 15px 25px 10px;
+
+    @media only screen and (max-width: 767px) {
+      margin-right: 14px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      border-color: #db3138;
+    }
+  }
+
+  &__textarea {
+    background: #141414;
+    border: 1px solid #898989;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 25px 10px;
+    color: #898989;
+    width: 526px;
+    height: 156px;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    &:hover {
+      border-color: #db3138;
+    }
+  }
+
+  &__body {
+    display: flex;
+    margin-bottom: 24px;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 15px;
+      margin-left: 0;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #898989;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+
+    @media only screen and (max-width: 767px) {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__communication {
+    display: flex;
+
+    @media only screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+
+  &__location {
+    display: flex;
+    margin-bottom: 13px;
+
+    @media only screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+
+  &__number {
+    display: flex;
+    margin-left: 20px;
+
+    @media only screen and (max-width: 767px) {
+      margin-left: 0;
+    }
+  }
+
+  &__mail {
+    display: flex;
+  }
+
+  &__img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__address,
+  &__phone,
+  &__email {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__mail {
+    margin-left: 30px;
+  }
+
+  &__btn {
+    position: relative;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #db3138;
+      border-color: #db3138;
+      transition: width 0.3s;
+    }
+
+    span {
+      position: relative;
+    }
+  }
+}

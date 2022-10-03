@@ -1,0 +1,95 @@
+/*Gallery*/
+
+.gallery {
+  padding: 90px 0 90px;
+
+  @media only screen and (max-width: 767px) {
+    padding: 10px 0 40px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: -15px;
+    position: relative;
+    z-index: 1;
+    width: 286px;
+    margin: -7px auto;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 35px;
+      left: -40px;
+      width: 366px;
+      height: 70px;
+      background: #db3138;
+      z-index: -1;
+
+      @media only screen and (max-width: 767px) {
+        bottom: 30px;
+        left: 10px;
+        width: 246px;
+      }
+    }
+  }
+
+  &__button-prev {
+    left: -90px;
+    right: auto;
+    width: 70px;
+    height: 70px;
+
+    @media only screen and (max-width: 1600px) {
+      left: -50px;
+      width: 50px;
+      height: 50px;
+    }
+
+    @media only screen and (max-width: 1450px) {
+      display: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &__button-next {
+    left: auto;
+    right: -90px;
+    width: 70px;
+    height: 70px;
+
+    @media only screen and (max-width: 1600px) {
+      right: -30px;
+      width: 40px;
+      height: 40px;
+    }
+
+    @media only screen and (max-width: 1450px) {
+      display: none;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+}

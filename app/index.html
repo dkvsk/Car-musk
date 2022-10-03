@@ -7,22 +7,800 @@
     <title>Главная</title>
 
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="libs/fancybox/fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <!--#include virtual="/parts/header.html" -->
+    <!-- Header__wrapper -->
 
-    <div class="burger">
-      <a href="#"><span></span></a>
+    <div class="header__wrapper">
+      
+      <!--#include virtual="/parts/header.html" -->
+
+      <section class="intro">
+        <div class="container">
+          <div class="intro__content">
+            <div class="intro__title">CAR MUSC</div>
+            <div class="intro__dekors">
+              <img class="intro__dekor" src="./images/rhombus.svg" alt="" />
+              <img class="intro__dekor" src="./images/rhombus.svg" alt="" />
+              <img class="intro__dekor" src="./images/rhombus.svg" alt="" />
+              <img class="intro__dekor" src="./images/rhombus.svg" alt="" />
+            </div>
+            <div class="intro__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+              orci urna amet penatibus.
+            </div>
+            <a href="#" class="intro__btn">
+              <span>Наши услуги</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="info__content">
+          <div class="info__item">
+            <div class="info__title">адрес:</div>
+            <div class="info__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+          </div>
+          <div class="info__item">
+            <div class="info__title">телефон:</div>
+            <div class="info__data">8 (812) 123-45-67</div>
+            <div class="info__data">8-911-123-45-67</div>
+          </div>
+          <div class="info__item">
+            <div class="info__title">Режим работы:</div>
+            <div class="info__data">пн-пт : 10:00 - 20:00</div>
+            <div class="info__data">сб-вск : 12:00 - 20:00</div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <main class="main" role="main">Main</main>
+    <!-- Progress -->
 
-    <!--#include virtual="/parts/footer.html" -->
+    <div class="progress">
+      <div class="container">
+        <div class="progress__body">
+          <div class="progress__info">
+            <div class="progress__title title">
+              наши достижения от кубка россии до чемпионатов мира
+            </div>
+            <div class="progress__dekors">
+              <img class="progress__dekor" src="./images/rhombus.svg" alt="" />
+              <img class="progress__dekor" src="./images/rhombus.svg" alt="" />
+              <img class="progress__dekor" src="./images/rhombus.svg" alt="" />
+              <img class="progress__dekor" src="./images/rhombus.svg" alt="" />
+            </div>
+            <div class="progress__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant
+              tincidunt aliquam tincidunt pretium sodales. Tristique odio
+              pellentesque et tincidunt posuere arcu purus lobortis risus. Urna,
+              ut amet odio orci magnis praesent ultrices. Praesent malesuada
+              lacus tellus tristique sit at. Sed viverra nulla nam arcu, non
+              iaculis pretium, volutpat.
+            </div>
+          </div>
+          <div class="progress__table">
+            <div class="progress__item">
+              <div class="progress__number">
+                <p>#</p>
+                <span>1</span>
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+            <div class="progress__item progress__item--second">
+              <div class="progress__number">
+                <p>#</p>
+                <span>4</span>
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+            <div class="progress__item">
+              <div class="progress__number">
+                <p>#</p>
+                <span>6</span>
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+            <div class="progress__item">
+              <div class="progress__number">
+                <p>#</p>
+                <span>3</span>
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+            <div class="progress__item">
+              <div class="progress__number">
+                <p>#</p>
+                <span>2</span>
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+            <div class="progress__item">
+              <div class="progress__number">
+                <p>#</p>
+                <span>1</span>
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+            <div class="progress__item progress__item--seven">
+              <div class="progress__number">
+                <p>#</p>
+                <span>1</span>
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+            <div class="progress__reward">
+              <div class="progress__picture">
+                <img src=".//images/cup.svg" alt="" />
+              </div>
+              <div class="progress__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                dui
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+
+    <div class="gallery">
+      <div class="container gallery__container">
+        <div class="gallery__swiper swiper js-gallery-slider">
+          <div class="gallery__wrapper swiper-wrapper">
+            <div class="gallery__slide swiper-slide">
+              <img class="gallery__image" src=".//images/car.png" alt="" />
+              <div class="gallery__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                vulputate laoreet sapien a sit ante.
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img class="gallery__image" src=".//images/car-1.png" alt="" />
+              <div class="gallery__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                vulputate laoreet sapien a sit ante.
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <img class="gallery__image" src=".//images/car-2.png" alt="" />
+              <div class="gallery__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                vulputate laoreet sapien a sit ante.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__button-prev swiper-button-prev js-gallery-prev">
+          <img src="./images/arrow-left.svg" alt="" />
+        </div>
+        <div class="gallery__button-next swiper-button-next js-gallery-next">
+          <img src="./images/arrow-rigth.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Advantages -->
+
+    <div class="advantages">
+      <div class="container advantages__container">
+        <div class="advantages__content">
+          <div class="advantages__body">
+            <div class="advantages__item">
+              <div class="advantages__head">
+                <div class="advantages__image">
+                  <img src=".//images/dekor-1.svg" alt="" />
+                </div>
+                <div class="advantages__title subtitle">
+                  материалы от лучших компаний
+                </div>
+              </div>
+              <div class="advantages__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pretium, rutrum est, molestie proin tristique duis sed. Morbi
+                suspendisse amet nisl vestibulum risus. Quis pretium
+              </div>
+            </div>
+            <div class="advantages__dekors">
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__head">
+                <div class="advantages__image">
+                  <img src=".//images/dekor-2.svg" alt="" />
+                </div>
+                <div class="advantages__title subtitle">Опытные мастера</div>
+              </div>
+              <div class="advantages__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
+                donec elementum egestas vitae ullamcorper. Amet volutpat ornare
+                pharetra amet adipiscing orci, lectus aenean ultricies. Erat
+                viverra eget blandit ornare. Molestie ipsum commodo faucibus
+                rhoncus
+              </div>
+            </div>
+            <div class="advantages__dekors">
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__head">
+                <div class="advantages__image">
+                  <img src=".//images/dekor-3.svg" alt="" />
+                </div>
+                <div class="advantages__title subtitle">
+                  Гарантия на все виды работы
+                </div>
+              </div>
+              <div class="advantages__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum volutpat.
+              </div>
+            </div>
+          </div>
+          <div class="advantages__slider">
+            <div class="advantages__swiper swiper js-advantages-slider">
+              <div class="advantages__wrapper swiper-wrapper">
+                <div class="advantages__slide swiper-slide">
+                  <div class="advantages__img">
+                    <img src="./images/car-3.png" alt="" />
+                  </div>
+                  <div class="advantages__info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras vulputate laoreet sapien a sit ante.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="advantages__button-prev swiper-button-prev js-advantages-prev"
+              >
+                <img src="./images/arrow-left.svg" alt="" />
+              </div>
+
+              <div
+                class="advantages__button-next swiper-button-next js-advantages-next"
+              >
+                <img src="./images/arrow-rigth.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+
+    <div class="services">
+      <div class="container">
+        <div class="services__head">
+          <div class="services__title title">Наши услуги</div>
+          <div class="services__dekors">
+            <img class="services__dekor" src="./images/rhombus.svg" alt="" />
+            <img class="services__dekor" src="./images/rhombus.svg" alt="" />
+            <img class="services__dekor" src="./images/rhombus.svg" alt="" />
+            <img class="services__dekor" src="./images/rhombus.svg" alt="" />
+          </div>
+          <ul class="services__tabs">
+            <li class="services__tab services__tab--active subtitle">Оклейка</li>
+            <li class="services__tab subtitle">Детейлинг</li>
+          </ul>
+        </div>
+        <div class="services__items services__items--active">
+          <div class="services__item">
+            <img
+              class="services__img services__img--first"
+              src="./images/dekor.svg"
+              alt=""
+            />
+            <div class="services__subtitle">Защитные пленки</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+          <div class="services__item">
+            <img class="services__img" src="./images/dekor-1.svg" alt="" />
+            <div class="services__subtitle">Цветные пленки</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+          <div class="services__item">
+            <img
+              class="services__img services__img--third"
+              src="./images/dekor-2.svg"
+              alt=""
+            />
+            <div class="services__subtitle">Дизайн</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+          <div class="services__item">
+            <img class="services__img" src="./images/dekor-3.svg" alt="" />
+            <div class="services__subtitle">Оклейка салона</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+        </div>
+        <div class="services__items">
+          <div class="services__item">
+            <img
+              class="services__img services__img--third"
+              src="./images/dekor-2.svg"
+              alt=""
+            />
+            <div class="services__subtitle">Дизайн</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+          <div class="services__item">
+            <img class="services__img" src="./images/dekor-3.svg" alt="" />
+            <div class="services__subtitle">Оклейка салона</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+          <div class="services__item">
+            <img
+              class="services__img services__img--first"
+              src="./images/dekor.svg"
+              alt=""
+            />
+            <div class="services__subtitle">Защитные пленки</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+          <div class="services__item">
+            <img class="services__img" src="./images/dekor-1.svg" alt="" />
+            <div class="services__subtitle">Цветные пленки</div>
+            <div class="services__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
+              ultrices pellentesque vulputate sit. Ut feugiat.
+            </div>
+            <a href="#" class="services__button">
+              <span>Подробнее</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advantages-second -->
+
+    <div class="advantages-second">
+      <div class="container advantages-second__container">
+        <div class="advantages-second__content">
+          <div class="advantages-second__body">
+            <div class="advantages-second__item">
+              <div class="advantages-second__head">
+                <div class="advantages-second__image">
+                  <img src=".//images/dekor.svg" alt="" />
+                </div>
+                <div class="advantages-second__title subtitle">
+                  100% полироль axem
+                </div>
+              </div>
+              <div class="advantages-second__text">
+                Pharetra in bibendum id id. Sit maecenas sollicitudin est,
+                hendrerit in malesuada. Eu, et lacus nisi mus sagittis, rhoncus
+                est dictum. Gravida lectus urna, arcu, sodales. Ac.
+              </div>
+            </div>
+            <div class="advantages-second__dekors">
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+            </div>
+            <div class="advantages-second__item">
+              <div class="advantages-second__head">
+                <div class="advantages-second__image">
+                  <img src=".//images/dekor-2.svg" alt="" />
+                </div>
+                <div class="advantages-second__title subtitle">
+                  выполняем работу четко по тз
+                </div>
+              </div>
+              <div class="advantages-second__text">
+                Lorem nulla non nibh quis elit odio. Dui et ultricies duis
+                mattis dictum et senectus nunc sodales. Tellus lorem risus etiam
+                quam massa lobortis convallis laoreet. Nec.
+              </div>
+            </div>
+            <div class="advantages-second__dekors">
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+              <img
+                class="advantages-second__dekor"
+                src="./images/rhombus.svg"
+                alt=""
+              />
+            </div>
+            <div class="advantages-second__item">
+              <div class="advantages-second__head">
+                <div class="advantages-second__image">
+                  <img src=".//images/dekor-3.svg" alt="" />
+                </div>
+                <div class="advantages-second__title subtitle">
+                  у нас лучшие мастера
+                </div>
+              </div>
+              <div class="advantages-second__text">
+                Posuere nam sodales ullamcorper bibendum justo maecenas at.
+                Ultricies bibendum morbi tempor vehicula. Ultrices erat maecenas
+                in id maecenas sed ipsum scelerisque.
+              </div>
+            </div>
+          </div>
+          <div class="advantages-second__slider">
+            <div class="advantages-second__swiper swiper js-advantages-slider">
+              <div class="advantages-second__wrapper swiper-wrapper">
+                <div class="advantages-second__slide swiper-slide">
+                  <div class="advantages-second__img">
+                    <img src="./images/car-4.png" alt="" />
+                  </div>
+                  <div class="advantages-second__info">
+                    Neque metus vitae urna purus aliquam. Felis nullam
+                    pellentesque ac mi commodo, amet, porta in. Dui.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="advantages-second__button-prev swiper-button-prev js-advantages-prev"
+              >
+                <img src="./images/arrow-left.svg" alt="" />
+              </div>
+
+              <div
+                class="advantages-second__button-next swiper-button-next js-advantages-next"
+              >
+                <img src="./images/arrow-rigth.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Works -->
+
+    <div class="works">
+      <div class="works__title title">Наши работы</div>
+      <div class="works__dekors">
+        <img class="works__dekor" src="./images/rhombus.svg" alt="" />
+        <img class="works__dekor" src="./images/rhombus.svg" alt="" />
+        <img class="works__dekor" src="./images/rhombus.svg" alt="" />
+        <img class="works__dekor" src="./images/rhombus.svg" alt="" />
+      </div>
+      <div class="works__items">
+        <a
+          class="works__item"
+          href="./images/car-10.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-10.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-5.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-5.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-6.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-6.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-7.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-7.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-8.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-8.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-9.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-9.png" alt="" />
+        </a>
+
+        <a
+          class="works__item"
+          href="./images/car-9.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-9.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-8.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-8.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-7.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-7.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-6.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-6.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-5.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-5.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-10.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-10.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-10.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-10.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-5.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-5.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-6.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-6.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-7.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-7.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-8.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-8.png" alt="" />
+        </a>
+        <a
+          class="works__item"
+          href="./images/car-9.png"
+          data-fancybox="gallery"
+        >
+          <img src="./images/car-9.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Feedback -->
+
+    <div class="feedback">
+      <div class="container">
+        <div class="feedback__head">
+          <div class="feedback__title title">ответим на любой вопрос</div>
+          <div class="feedback__dekors">
+            <img class="feedback__dekor" src="./images/rhombus.svg" alt="" />
+            <img class="feedback__dekor" src="./images/rhombus.svg" alt="" />
+            <img class="feedback__dekor" src="./images/rhombus.svg" alt="" />
+            <img class="feedback__dekor" src="./images/rhombus.svg" alt="" />
+          </div>
+        </div>
+        <form class="feedback__form" action="">
+          <div class="feedback__data">
+            <input class="feedback__input" type="text" placeholder="Имя" />
+            <input class="feedback__input" type="text" placeholder="Телефон" />
+          </div>
+          <div class="feedback__body">
+            <textarea
+              class="feedback__textarea"
+              name="question"
+              id=""
+              cols="30"
+              rows="10"
+            >
+Вопрос по дизайну, тюнингу и др.</textarea
+            >
+            <div class="feedback__socials">
+              <a class="feedback__social" href="#">
+                <img src="./images/telegram.svg" alt="" />
+              </a>
+              <a class="feedback__social" href="#">
+                <img src="./images/youtube.svg" alt="" />
+              </a>
+              <a class="feedback__social" href="#">
+                <img src="./images/vk.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="feedback__footer">
+            <button class="feedback__btn" type="submit">
+              <span>отправить</span>
+            </button>
+            <div class="feedback__info">
+              <a href="#" class="feedback__location">
+                <img class="feedback__img" src="./images/info.svg" alt="" />
+                <div class="feedback__address">
+                  Eu faucibus et rutrum fringilla orci nunc
+                </div>
+              </a>
+              <div class="feedback__communication">
+                <a href="#" class="feedback__number">
+                  <img class="feedback__img" src="./images/info-1.svg" alt="" />
+                  <a href="tel:+88121234567" class="feedback__phone">8 (812) 123 45 67</a>
+                </a>
+                <a href="#" class="feedback__mail">
+                  <img class="feedback__img" src="./images/info-2.svg" alt="" />
+                  <a href="test@test.ru" class="feedback__email">test@test.ru</a>
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+      <!--#include virtual="/parts/footer.html" -->
+
 
     <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/fancybox/fancybox.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

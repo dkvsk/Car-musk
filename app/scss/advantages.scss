@@ -1,0 +1,153 @@
+/*Advantages*/
+
+.advantages {
+  margin-top: 90px;
+  padding-bottom: 90px;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+
+    @media only screen and (max-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &__slider {
+    max-width: 770px;
+    width: 100%;
+    padding-left: 134px;
+    flex-shrink: 0;
+
+    @media only screen and (max-width: 1200px) {
+      max-width: 636px;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+    }
+  }
+
+  .advantages__wrapper {
+    height: auto;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media only screen and (max-width: 1300px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__body {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    margin-left: 30px;
+    font-size: 32px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    font-weight: 500;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  &__dekors {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__dekor {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__photo {
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    display: flex;
+  }
+
+  &__info {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 60px 90px;
+
+    @media only screen and (max-width: 767px) {
+      padding: 40px 50px;
+      font-size: 15px;
+    }
+  }
+
+  &__button-prev {
+    left: 0;
+    right: auto;
+    width: 70px;
+    height: 70px;
+    top: auto;
+    bottom: 50px;
+
+    @media only screen and (max-width: 767px) {
+      width: 50px;
+      height: 50px;
+      bottom: 40px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &__button-next {
+    left: auto;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    top: auto;
+    bottom: 50px;
+
+    @media only screen and (max-width: 767px) {
+      width: 50px;
+      height: 50px;
+      bottom: 40px;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}
